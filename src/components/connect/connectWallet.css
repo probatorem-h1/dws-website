@@ -1,0 +1,55 @@
+.connect-wallet-button {
+    font-family: 'Michroma', sans-serif;
+    color: white;
+    background-color: #231f20;
+    border-color: #231f20;
+    padding: 0.8vw 1vw 0.8vw 1vw;
+    border-radius: 8px;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.wallet-connect-container>.content {
+    border-radius: 10px;
+    color: white;
+    line-height: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+}
+
+.wallet-connect-card {
+    color: white;
+    border-radius: 10px;
+    background-color: black;
+    cursor: pointer;
+    padding: 30px;
+    width: 100%;
+    max-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: black;
+}
+.wallet-connect-card:hover{
+    transition: all 0.3s ease-out;
+    background: white;
+    color: black;
+    transition: 250ms;
+
+}
+
+
+
+
+
+@media screen and (max-width: 450px) {
+    .connect-wallet-button {
+        font-size: 10px;
+    }
+}

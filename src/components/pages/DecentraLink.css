@@ -1,0 +1,148 @@
+.decentra-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+
+.decentra-header {
+    margin-top: 50px;
+    color: white;
+    text-align: center;
+    font-family: 'Michroma', sans-serif;
+    font-size: 100px;
+
+}
+
+.connect-wrapper {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30vw;
+    height: 450px;
+    background-color: #181818;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 100px;
+}
+
+.info-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.account-guild-wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-evenly;
+
+}
+
+.info-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.warning-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.inputButton {
+    background-color: white;
+    width: 25vw;
+    height: 50px;
+    border-color: transparent;
+    border-radius: 10px;
+    color: black;
+    font-family: 'Michroma', sans-serif;
+    font-size: 1.8vw;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.inputButton:hover {
+    transition: 300ms;
+    width: 26vw;
+    height: 60px;
+}
+
+.warning-section-header {
+    color: white;
+    font-family: 'Josefin Sans';
+    font-weight: bold;
+    font-size: 17px;
+    margin-left: 20px;
+}
+
+.warning-section-list {
+    color: white;
+    font-family: 'Josefin Sans';
+    font-weight: bold;
+    font-size: 17px;
+    margin-left: 20px;
+}
+
+
+@media screen and (max-width: 1000px) {
+    .decentra-header{
+        font-size: 80px;
+    }
+    .connect-wrapper {
+        width: 100%;
+    }
+
+    .warning-section {
+        align-items: center;
+    }
+
+    .warning-section-header {
+        margin-left: 0px;
+        margin: 10px;
+    }
+
+    .warning-section-list {
+        margin-left: 0px;
+        margin: 10px;
+    }
+
+    .inputButton {
+        width: 40vw;
+        font-size: 3vw;
+    }
+
+    @media screen and (max-width: 800px) {
+        .inputButton {
+            width: 80vw;
+            font-size: 5.5vw;
+        }
+        .decentra-header{
+            font-size: 50px;
+        }
+    }
+    @media screen and (max-width: 500px) {
+        .decentra-header{
+            font-size: 40px;
+        }
+    }
+    @media screen and (max-width: 400px) {
+        .decentra-header{
+            font-size: 30px;
+        }
+    }
+
+
+
+}

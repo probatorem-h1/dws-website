@@ -1,23 +1,26 @@
-import logo from './logo.svg';
+import * as React from 'react'
 import './App.css';
+import { Routes, Route } from "react-router-dom";
+import Home from './components/pages/Home';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import DecentraLink from './components/pages/DecentraLink';
+import { useEffect, useState } from 'react';
+import * as utils from "./components/utils";
+import * as walletMetamask from "./components/connect/metamask";
+import * as walletDefi from "./components/connect/defiWallet";
+import * as walletConnect from "./components/connect/walletConnect";
+import Listener from './components/connect/Listener';
+
+
+
 
 function App() {
+  Listener();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
     </div>
   );
 }
