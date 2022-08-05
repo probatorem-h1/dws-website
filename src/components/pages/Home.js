@@ -28,7 +28,9 @@ function Home() {
                 <div className='homepage-container'>
                     <h1 className='homepage-title'>DWS</h1>
                     <h2 className='homepage-acronym'>Decentralized Web3 Services</h2>
-                    <button className='homepage-get-started'>LFG</button>
+                    <a href='https://docs.dwsconsult.com' target="_blank" rel="noreferrer">
+                        <button className='homepage-get-started'>LFG</button>
+                    </a>
                 </div>
             </div>
         </>
