@@ -4,13 +4,6 @@ import * as config from "../config/config";
 import * as utils from "../utils";
 // This is the SDK provided by Wallet Connect
 import WalletConnectProvider from "@walletconnect/web3-provider";
-import WCQrMordal from "@walletconnect/qrcode-modal";
-import WalletConnect from "@walletconnect/client";
-
-const connector = new WalletConnect({
-  bridge: "https://bridge.walletconnect.org", // Required
-  qrcodeModal: WCQrMordal,
-});
 
 export const connect = async () => {
   try {
